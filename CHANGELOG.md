@@ -1,3 +1,10 @@
+4.14.3
+------
+
+- Add posibility to configure interfaces without an ip address (for bridges).
+  For this to work, a safeguard was removed that prevented interface configuration to be written to
+  `/etc/network/interfaces` when no address was set.
+
 4.14.2
 ------
 
