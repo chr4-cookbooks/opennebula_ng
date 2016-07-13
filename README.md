@@ -48,6 +48,7 @@ The default recipe just includes the `apt_repository` recipe
 ### apt\_repository
 
 This recipe sets up the official OpenNebula PPA for Ubuntu (stable)
+You may override the specified version by manually setting `node['opennebula_ng']['version']`
 
 
 ### sunstone

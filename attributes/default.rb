@@ -21,3 +21,7 @@
 # OpenNebula doesn't allow multiple active nodes. Set this to true on your currently active
 # OpenNebula host to automatically enable/start the frontend services (oned, scheduler, sunstone)
 default['opennebula_ng']['active'] = false
+
+# Default OpenNebula version to install
+# (used by the apt_repository recipe to install the appropriate repository)
+default['opennebula_ng']['version'] = '5.0'
