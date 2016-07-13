@@ -1,3 +1,9 @@
+5.0.0
+------
+
+- Add `node['opennebula_ng']['version']` attribute to allow installing a specific version
+- Update default OpenNebula version to `5.0`
+
 4.14.3
 ------
 
