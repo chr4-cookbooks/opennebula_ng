@@ -18,6 +18,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+# Repository to install lvm block addon (removed from core since OpenNebula-5.0)
+default['opennebula_ng']['lvm']['repository'] = 'https://github.com/OpenNebula/addon-lvm'
+default['opennebula_ng']['lvm']['branch'] = 'master'
+
 # Add LVM datastores
 # Format:
 #   "lvm #{node['hostname']}" => {
