@@ -50,6 +50,17 @@ The default recipe just includes the `apt_repository` recipe
 This recipe sets up the official OpenNebula PPA for Ubuntu (stable)
 You may override the specified version by manually setting `node['opennebula_ng']['version']`
 
+### addon\_lvm
+
+This recipe installs the official [OpenNebula LVM addon](https://github.com/OpenNebula/addon-lvm), which is not part of OpenNebula core since version 5.0
+If you are using LVM block devices using the `lvm` driver, you're going to need this.
+
+By default it installs the addon from the official git repository, as there are no tarball releases yet. The repository, as well as the branch (defaults to `master`) can be overriden using the following attributes:
+
+```ruby
+node['opennebula_ng']['lvm']['repository'] = 'https://github.com/OpenNebula/addon-lvm'
+node['opennebula_ng']['lvm']['branch'] = 'master'
+```
 
 ### sunstone
 
