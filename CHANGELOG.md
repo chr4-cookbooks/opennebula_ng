@@ -1,5 +1,10 @@
+5.1.0
+-----
+
+- Add `addon_lvm` recipe, to install the official [OpenNebula LVM Addon](https://github.com/OpenNebula/addon-lvm)
+
 5.0.0
-------
+-----
 
 - Add `node['opennebula_ng']['version']` attribute to allow installing a specific version
 - Update default OpenNebula version to `5.0`
